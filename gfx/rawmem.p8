@@ -45,6 +45,7 @@ function _draw()
 	cls()
 	spr(1,10,10)
 	spr(2,18,10)
+	spr(1,40,50)
 	initial_draw_done = true
 end
 __gfx__
