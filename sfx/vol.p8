@@ -3,7 +3,7 @@ version 32
 __lua__
 local slider = {}
 function _init()
-	slider.val = 7
+	slider.val = 5
 	slider.max = 7
 	slider.min = 1
 	slider.pos = {x=10,y=10}
