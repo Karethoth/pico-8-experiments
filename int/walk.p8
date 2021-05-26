@@ -29,13 +29,19 @@ function _update()
 	if p.mov[1] != 0 or p.mov[2] != 0 then
 		p.x += p.mov[1]
 		p.y += p.mov[2]
+		if p.mov[1] > 0 then
+			p.flipped = false;
+		end
+		if p.mov[1] < 0 then
+			p.flipped = true;
+		end
 		p.mov = {0,0}
 	end
 end
 
 function _draw()
 	cls()
-	spr(1,p.x*8,p.y*8)
+	spr(1,p.x*8,p.y*8,1,1,p.flipped)
 end
 __gfx__
 00000000009999000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
